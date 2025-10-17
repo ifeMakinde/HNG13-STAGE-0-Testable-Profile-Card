@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testable Profile Card || HNG13-STAGE-0</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Profile</h1>
+    </header>
+    <article data-testid="test-profile-card" class="main-wrapper">
+      <figure data-testid="test-user-avatar-container" class="img-container">
+        <img
+          data-testid="test-user-avatar"
+          src="https://plus.unsplash.com/premium_vector-1727955579176-073f1c85dcda?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1760"
+          alt="user-photo"
+        />
+
+        <figcaption class="fig-caption">profile picture</figcaption>
+      </figure>
+
+      <!-- user info -->
+      <div data-testid="test-user-info" class="user-name-container">
+        <h2 data-testid="test-user-name" class="header">Ifeoluwa Makinde</h2>
+        <p data-testid="test-user-bio" class="bio">
+          Frontend Developer || <span>Intern@HNG13</span>
+        </p>
+
+        <!-- local time -->
+        <p data-testid="test-user-time" class="time">current time:</p>
+
+        <!-- hobbies -->
+        <section data-testid="test-user-hobbies">
+          <h3 class="hobbies">Hobbies</h3>
+          <ul class="hobbies-container">
+            <li>coding💻</li>
+            <li>videogames🎮</li>
+            <li>anime🈹</li>
+          </ul>
+        </section>
+
+        <!-- dislikes -->
+        <section data-testid="test-user-dislikes">
+          <h3 class="dislikes">Dislikes</h3>
+
+          <ul data-testid="" class="dislikes-container">
+            <li>bad network</li>
+            <li>over-engineering</li>
+          </ul>
+        </section>
+
+        <!-- social link -->
+        <nav data-testid="test-user-social-links" class="social-link-container">
+          <li data-testid="test-user-social-github" class="social">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/ifeMakinde"
+              target="_blank"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li data-testid="test-user-social-twitter" class="social">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://x.com/ife__makinde"
+            >
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </nav>
+
+        <!-- hobbies -->
+
+        <div class="cta-container">
+          <button>Edit status</button>
+          <button>Edit profile</button>
+        </div>
+      </div>
+    </article>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="./script.js"></script>
+</html>
