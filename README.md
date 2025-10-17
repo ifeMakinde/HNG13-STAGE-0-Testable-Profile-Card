@@ -1,5 +1,58 @@
 # HNG13-STAGE-0-Testable-Profile-Card
 
-Profile Card Component🚀 Project OverviewThis is a solution for the Stage 0 task of building an accessible and responsive Profile Card component. The project focuses on utilizing semantic HTML, modern CSS (Flexbox/Grid) for responsiveness, and vanilla JavaScript to ensure core requirements, like the live millisecond time, are met.All visible elements strictly adhere to the provided testing guidelines by including specific data-testid attributes to facilitate automated testing.✨ Core FeaturesSemantic Markup: Built using HTML5 semantic elements (<article>, <figure>, <nav>, <section>, etc.) to ensure high accessibility.Accessibility Focus: All interactive elements are keyboard-focusable, and the avatar image includes a necessary alt attribute.Responsive Design: The card utilizes modern CSS (Flexbox or Grid) to adapt smoothly across mobile, tablet, and desktop breakpoints.Live Data: Displays the current time in milliseconds using Date.now().Test-Driven Structure: Every required component includes the specified data-testid attribute for stable automation.📋 Requirements ChecklistContent ElementHTML Tag Suggestiondata-testidStatusProfile Card Root<article>test-profile-card✅Name<h2> / <header>test-user-name✅Short Biography<p>test-user-bio✅Current Time (ms)<span>test-user-time✅Avatar Image<img> within <figure>test-user-avatar✅Social Links List<nav> or <ul>test-user-social-links✅Hobbies List<ul> within <section>test-user-hobbies✅Dislikes List<ul> within <section>test-user-dislikes✅🛠️ Technology StackHTML5 (Semantic Markup)CSS3 (Flexbox/Grid for Layout)Vanilla JavaScript (For dynamic time update)⚙️ Setup and InstallationThis is a static project that can be run directly in any web browser.Clone the repository:Bashgit clone [YOUR_REPO_URL_HERE]
-Navigate to the project directory:Bashcd profile-card-component
-Open the index.html file in your preferred web browser.Alternatively, you can use a simple local server extension (like Live Server for VS Code) for live reloading during development.Author: [IfeMakinde]
+# 🪪 Profile Card — Stage 0 Task
+
+A simple, responsive, and accessible **Profile Card** built with **HTML**, **CSS**, and **Vanilla JavaScript**, following semantic HTML best practices and Stage 0 task guidelines.
+
+## 📋 Features
+
+- ✅ Semantic HTML structure (`<article>`, `<header>`, `<figure>`, `<nav>`, `<section>`)
+- ✅ All elements include `data-testid` attributes for automated testing
+- ✅ Responsive design (mobile, tablet, desktop)
+- ✅ Current time displayed in **milliseconds** using `Date.now()`
+- ✅ Avatar image with proper `alt` text
+- ✅ Social links open in new tabs with `rel="noopener noreferrer"`
+- ✅ Accessible keyboard navigation and visible focus styles
+
+## 🧱 Project Structure
+
+
+- **index.html:** Contains the semantic markup and `data-testid` attributes  
+- **style.css:** Handles layout, responsiveness, and accessibility styles  
+- **script.js:** Updates and displays current time dynamically
+
+## 🧪 Data Test IDs Used
+
+| Element | data-testid |
+|----------|--------------|
+| Profile card root | `test-profile-card` |
+| User name | `test-user-name` |
+| Biography | `test-user-bio` |
+| Current time | `test-user-time` |
+| Avatar image | `test-user-avatar` |
+| Social links container | `test-user-social-links` |
+| Hobbies list | `test-user-hobbies` |
+| Dislikes list | `test-user-dislikes` |
+
+## 🖼️ Responsiveness
+
+- Mobile: content stacks vertically  
+- Tablet & Desktop: avatar aligned beside text  
+- Uses **Flexbox** for layout adaptability
+
+## 🕒 Behavior
+
+- `Date.now()` is displayed dynamically in milliseconds  
+- All links open in a new tab for security and accessibility
+
+## 🎥 Reference
+
+**Task explainer video:** [Watch here](https://vm.tiktok.com/ZMAXLFy8s/)
+
+ ## How to Run Locally
+Clone the repository using the command
+   git clone https://github.com/ifeMakinde/HNG13-STAGE-0-Testable-Profile-Card.git
+Navigate to the folder
+
+cd Testable Profile Card
+Run `Code .` and Open index.html in your browser .
