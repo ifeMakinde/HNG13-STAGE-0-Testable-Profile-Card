@@ -8,3 +8,5 @@ const getTime = () => {
   timeTag.innerHTML += `${curTime}ms`;
 };
 getTime();
+
+setInterval(getTime,1000)
