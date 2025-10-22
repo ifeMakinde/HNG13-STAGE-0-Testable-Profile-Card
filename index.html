@@ -6,10 +6,22 @@
     <title>Testable Profile Card || HNG13-STAGE-0</title>
 
     <link rel="stylesheet" href="./style.css" />
+    <a href="./contact.html"></a>
   </head>
   <body>
     <header>
-      <h1 class="heading">Profile</h1>
+      <h1 class="heading">
+        <a href="./index.html" style="color: black; cursor: pointer">
+          profile
+        </a>
+      </h1>
+
+      <div class="contact-about-container">
+        <ul class="links">
+          <li><a href="./contact.html" target="_blank"> Contact</a></li>
+          <li><a href="./about.html" target="_blank"> About Me</a></li>
+        </ul>
+      </div>
     </header>
     <article data-testid="test-profile-card" class="main-wrapper">
       <figure data-testid="test-user-avatar-container" class="img-container">
@@ -30,7 +42,7 @@
         </p>
 
         <!-- local time -->
-        <p data-testid="test-user-time" class="time"></p>
+        <p data-testid="test-user-time" class="time">current time:</p>
 
         <!-- hobbies -->
         <section data-testid="test-user-hobbies">
@@ -94,4 +106,3 @@
   ></script>
   <script src="./script.js"></script>
 </html>
-

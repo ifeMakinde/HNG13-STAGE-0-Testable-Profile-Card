@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./about.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">
+        <a href="./index.html" style="color: black; cursor: pointer">
+          profile
+        </a>
+      </h1>
+
+      <div class="contact-about-container">
+        <ul class="links">
+          <li><a href="./contact.html" target="_blank"> Contact</a></li>
+          <li><a href="./about.html" target="_blank"> About Me</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main data-testid="test-about-page" class="main-about-wrapper">
+      <section data-testid="test-about-section" class="section--1">
+        <div>
+          <h2 class="Perosnal-info">Perosnal Infomation</h2>
+
+          <ul class="lists">
+            <li>
+              <span>Name:</span>
+              Ifeoluwa Makinde
+            </li>
+            <li class="age">
+              <span>Age:</span>
+              <!-- gotten from javascript  -->
+            </li>
+            <li>
+              <span>Education:</span>
+
+              Obafemi Awolowo University
+            </li>
+          </ul>
+        </div>
+
+        <!-- child 2 -->
+        <div>
+          <h2>Contact Info</h2>
+          <ul class="lists">
+            <li>makindeifeoluwa07@gmail.com</li>
+            <li>+234 81 6936 1335</li>
+            <button>
+              <a href="./contact.html" target="_blank">Contact Us </a>
+            </button>
+          </ul>
+        </div>
+
+        <!-- child 3 -->
+        <div data-testid="test-about-bio" class="about-me-container">
+          <h2 class="about">About Me</h2>
+          <p class="bio-details">
+            Hi there, i'm ifeoluwa Makinde, a junior Frontend Developer from
+            Nigeria with passion for building intiutive Frontend Web
+            Applications with tools like HTML, CSS,React and Javascript for
+            optimum user experience (not sure that's a term anyways, junior
+            developer!). I enjoy being part of a team, learning new
+            technologies, solving real problems and ultimately sharing ideas.
+          </p>
+        </div>
+      </section>
+
+      <section data-testid="test-about-section" class="section--2">
+        <h1 class="all-about">All About me</h1>
+
+        <div data-testid="test-about-goals" class="funfact">
+          <h3>Goals</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quia
+            numquam optio dolore? Aliquid provident facilis accusantium soluta,
+            nulla earum voluptatem corrupti, sit dolor expedita, laborum
+            pariatur. Ea voluptate illum dolores officiis accusamus, officia
+            necessitatibus, labore aliquid laudantium quis a.
+          </p>
+        </div>
+
+        <div data-testid="test-about-future-note" class="funfact">
+          <h3>Note to future self</h3>
+          <p>
+            Hopefully, when all this is over, the learning, the not giving up,
+            the persevereance, i'm able to look back with no regrets and smile
+            with how far i've come !
+          </p>
+        </div>
+
+        <div data-testid="test-about-confidence" class="funfact">
+          <h3>Low Confidence Areas</h3>
+          <p>Typescipt</p>
+          <p>Advanced React concepts</p>
+          <p>GHithub Branching</p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./about.js"></script>
+</html>

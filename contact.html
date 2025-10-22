@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1 class="heading">
+        <a href="./index.html" style="color: black; cursor: pointer">
+          profile
+        </a>
+      </h1>
+
+      <div class="contact-about-container">
+        <ul class="links">
+          <li><a href="./contact.html" target="_blank"> Contact</a></li>
+          <li><a href="./about.html" target="_blank"> About Me</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN  -->
+    <section class="section">
+      <h1 class="contact-heading">contact us</h1>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3 class="call">
+            Call <br />
+            <span>+234 81 6936 1335</span>
+          </h3>
+          <h3>
+            Email <br />
+            <span>makindeifeoluwa07@gmail.com</span>
+          </h3>
+          <h3>
+            Location <br />
+            <span>Lagos, Nig</span>
+          </h3>
+        </div>
+        <form action="" class="contact-form">
+          <input
+            type="text"
+            placeholder="Name"
+            class="name"
+            data-testid="test-contact-name"
+          />
+          <br />
+
+          <input
+            type="email"
+            placeholder="Email address"
+            class="email"
+            data-testid="test-contact-email"
+            novalidate
+          />
+          <br />
+          <textarea
+            data-testid="test-contact-message"
+            type="text"
+            placeholder="Message"
+            class="message"
+            rows="6"
+            cols="40"
+          ></textarea>
+
+          <button class="btn" data-testid="test-contact-submit">Send</button>
+
+          <p class="error" data-testid="test-contact-error-mail"></p>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="./contact.js"></script>
+</html>
