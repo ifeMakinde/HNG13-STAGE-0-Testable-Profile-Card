@@ -8,7 +8,7 @@
 body {
   margin: 0 auto;
   max-width: 1024px;
-  font-family: "Inter", sans-serif
+  font-family: "Inter", sans-serif;
   background-color: #fdfdfd;
 }
 
@@ -182,4 +182,5 @@ header {
     width: 100%;
   }
 }
+
 
